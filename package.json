@@ -353,6 +353,39 @@
                 "when": "editorTextFocus"
             },
             {
+                "mac": "alt+cmd+l",
+                "win": "alt+shift+l",
+                "linux": "alt+shift+l",
+                "key": "alt+shift+l",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.extract.variable"
+                }
+            },
+            {
+                "mac": "alt+cmd+m",
+                "win": "alt+shift+m",
+                "linux": "alt+shift+m",
+                "key": "alt+shift+m",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.extract.function"
+                }
+            },
+            {
+                "mac": "alt+cmd+v",
+                "win": "alt+shift+v",
+                "linux": "alt+shift+v",
+                "key": "alt+shift+v",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.move"
+                }
+            },
+            {
                 "mac": "alt+left",
                 "win": "ctrl+left",
                 "linux": "ctrl+left",
@@ -463,6 +496,14 @@
                 "key": "ctrl+alt+h",
                 "command": "references-view.showCallHierarchy",
                 "when": "editorHasCallHierarchyProvider"
+            },
+            {
+                "mac": "f4",
+                "win": "f4",
+                "linux": "f4",
+                "key": "f4",
+                "command": "java.action.showTypeHierarchy",
+                "when": "editorLangId == java && editorTextFocus"
             }
         ]
     },
